@@ -34,10 +34,10 @@
         <div class="col-12">
           <div class="card">
             <div class="card-header">
-              	<a href="{{Route('peminjaman.form')}}" class="btn btn-primary btn-flat">
+              	<a href="{{Route('peminjaman.form')}}" class="btn btn-success btn-flat">
               		<i class="fa fa-plus"></i> Tambah
               	</a>
-              	<button class="btn btn-secondary btn-flat" data-ng-click="vm.reloadData()">
+              	<button class="btn btn-warning btn-flat" data-ng-click="vm.reloadData()">
 			           <i class="fa fa-refresh"></i> Reload data
 			           </button>
             </div>

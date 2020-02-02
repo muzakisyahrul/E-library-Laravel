@@ -20,7 +20,38 @@
   
 </head>
 <body class="hold-transition sidebar-mini">
+<style type="text/css">
+  .sidebar-dark-primary {
 
+    background-color: #1c1991;
+
+}
+
+[class*="sidebar-dark"] .user-panel {
+
+    border-bottom: 1px solid #4e94d2;
+
+}
+[class*="sidebar-dark"] .brand-link {
+
+    color: rgba(255,255,255,.8);
+    border-bottom: 1px solid #3790df;
+
+}
+.card{
+  border: 1px solid #8850ec;
+}
+.card-header {
+    background-color: #8850ec;
+}
+.card-title{
+  color: #fff;
+}
+thead,th{
+  background-color: #ddd;
+  border-color: #ddd;
+}
+</style>
 @yield('modal')
 
 <div class="wrapper">

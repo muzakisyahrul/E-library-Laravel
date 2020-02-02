@@ -1,12 +1,12 @@
- <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+ <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom" style="background-color: #0b79d5 !important;">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <!-- <li class="nav-item d-none d-sm-inline-block">
         <a href="{{Route('dashboard')}}" class="nav-link">Home</a>
-      </li>
+      </li> -->
     </ul>
 
     <!-- SEARCH FORM -->

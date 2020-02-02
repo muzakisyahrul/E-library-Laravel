@@ -29,6 +29,18 @@
                   <p>Dashboard</p>
                 </a>
           </li>
+           <li class="nav-item">
+                <a href="{{Route('peminjaman.form')}}" class="nav-link @yield('form_peminjaman')">
+                  <i class="fa fa-wpforms  nav-icon"></i>
+                  <p>Peminjaman</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{Route('peminjaman.data')}}" class="nav-link @yield('data_peminjaman')">
+                  <i class="fa fa-address-book nav-icon"></i>
+                  <p>Data Peminjaman</p>
+                </a>
+              </li>
           <li class="nav-item has-treeview @yield('open_master')">
             <a href="#" class="nav-link @yield('master')">
               <i class="nav-icon fa fa-briefcase"></i>
@@ -84,36 +96,12 @@
               </li>
               @if(Auth::user()->id_hak_akses == 1)
               <li class="nav-item">
-                <a href="{{Route('denda.data')}}" class="nav-link @yield('denda_data')">
+                <a href="{{Route('denda.data')}}" class="nav-link @yield('denda_buku')">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Denda Keterlambatan</p>
                 </a>
               </li>
               @endif
-            </ul>
-          </li>
-
-         <li class="nav-item has-treeview @yield('open_peminjaman')">
-            <a href="#" class="nav-link @yield('peminjaman')">
-              <i class="nav-icon fa fa-briefcase"></i>
-              <p>
-                Peminjaman
-                <i class="right fa fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{Route('peminjaman.form')}}" class="nav-link @yield('form_peminjaman')">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Form Peminjaman</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{Route('peminjaman.data')}}" class="nav-link @yield('data_peminjaman')">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Data Peminjaman</p>
-                </a>
-              </li>
             </ul>
           </li>
         </ul>

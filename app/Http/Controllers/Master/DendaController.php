@@ -93,25 +93,5 @@ class DendaController extends Controller
         }
     }
 
-    public function delete_data($id){
-        // return response()->json(['id'=>$id]);
-        try{
-            DB::beginTransaction();
-            $dat       = Denda::where('id',$id)->first();
-            $deleted    = $dat->delete();
-
-            if($deleted){
-                DB::commit();
-                $data = ['status' => 'success', 'message' => 'Success! Data berhasil dihapus.'];
-            }else{
-                DB::rollback();
-                $data = ['status' => 'fail', 'message' => 'Warning! Data gagal dihapus.'];
-            }
-            return response()->json($data,200);
-        }catch (\Exception $e) {
-            DB::rollback();
-            $msg = $e->getMessage();
-            return response($msg,500);
-        }
-    }
+    
 }

@@ -167,7 +167,10 @@ class PetugasController extends Controller
             $deleted_folder = true;
             // if not softdelete then remove folder image
             if($user->photo != '/default-profile.png'){
-                $deleted_folder = File::deleteDirectory(public_path('/images/user/'.$id));
+                $path_deleted = public_path('/images/user/'.$id);
+                if(file_exists($path_deleted)){
+                    $deleted_folder = File::deleteDirectory($path_deleted);
+                }
             }
 
             if($deleted && $deleted_folder){

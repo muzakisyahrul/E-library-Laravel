@@ -65,8 +65,7 @@
                   <td data-ng-bind="denda.nominal"></td>
                   <td class="text-center">
                     <button class="btn btn-primary btn-sm" data-ng-click="showModal('edit',denda.id)"><i class="fa fa-edit"></i> Edit</button>
-                    <button class="btn btn-danger btn-sm" data-ng-click="ModalDelete(denda.id,denda.nominal)"><i class="fa fa-eraser"></i> Hapus</button>
-                  </td>
+                    </td>
                 </tr>
                 <tr data-ng-show="daftar_denda.length==0">
                   <td colspan="3" class="text-center"><h3 data-ng-bind="no_data"></h3></td>
